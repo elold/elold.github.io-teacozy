@@ -1,0 +1,162 @@
+* {
+    font-family: Helvetica;
+    color: seashell;
+    font-size: 22px;
+    opacity: 0.9;
+    font-weight: bold;
+  }
+  /*The spec doesn't say anything about font-weight but looks bolder than normal font-weight so I 
+  choose to do it bold except in the "locations-boxes"*/
+
+  body {
+    width: 1280px;
+    background-color: black;
+  }
+  /* Is it a good solution to define a width of the body and let other elements relate to that or are
+  there better solutions? */
+
+#header {
+    height: 69px;
+    width: 1280px;
+    display:inline-flex;
+    justify-content: space-between;
+    background-color: black;
+    position: fixed;
+    z-index:2;
+    border-bottom: 1px solid seashell;
+      }
+/* After I set the #header's position to fixed I accountered two problems
+1) The header is placed on top of ".mission" container and I'cant get it back to being placed below the header.
+2) the width increased. Wider than the width of the body of 1280px. So I changed from width:100% to width 1280px. 
+Is this a correct way of solving the problem and why is width: 100% no longer working? 
+All other elements are set to width: 100% and that works*/
+
+.logo {
+    height: 50px;
+    margin: 10px;   
+    display:inline-flex; 
+}
+ 
+nav {
+    margin-right: 10px;
+}
+
+ul {
+    display: inline-flex; 
+    list-style: none;   
+    font-size: 22px;
+    gap: 30px;
+}
+
+.mission {
+width:100%;
+height: 700px;  
+background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*12idre9*_ga*MzY4MjY3NzY0Mi4xNjczNjA2MDc4*_ga_3LRZM6TM9L*MTY3ODQ0NDczOS4xOC4xLjE2Nzg0NDQ3NDMuMC4wLjA");
+background-repeat: no-repeat;
+background-position-x: center;
+background-size: 1200px 700px;
+margin-bottom: 50px;  
+border: 1px solid black
+
+}
+/*If I remove the border the page changes a lot. The header and mission sections are moved down
+but the "mission-text" box remains where it is. Why and how do I solve?? */
+
+.mission-text {
+    background-color: black;
+    text-align: center;
+    height: 100px;
+    margin-top: 290px;
+}
+/*I would like to vertically center the mission-text but "align-items" don't work for me 
+and I don't know how to do it. I tried finding ways to vertically adjust elements at many 
+occasions throughout this project, I see others have used it but nothing happens when I 
+use that code. Instead I used "margins" to position the boxes.*/
+
+h2 {
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+h4 {
+   margin-bottom; 0px;
+}
+
+.month-text {
+    text-align: center;
+}
+
+
+.month {
+    width: 100%;
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}   
+
+.tea-image {
+        height: 200px;
+        width: 300px;
+    }
+
+.tea-boxes p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.locations-container {
+    height: 500px;
+    background-image: url("/Users/elinlewold/Codecademy/projects/Tea Cozy/Resources/img-locations-background.jpeg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size:1200px 500px;
+    border: 1px solid black
+    /* 1) When I erase the border the height of the image shrinks. Why on earth does that happen? 
+    
+    2) The background images have been stretched out on my screen. Not positioned exactly like in the spec.
+    Why and how can I do it better?*/
+}
+
+.locations-container h2{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+.locations {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    gap: 40px;
+}
+/*Same as with "mission-text": I would like to vertically center the location-boxes but "align-items" don't work for me 
+and I don't know how to do it. Instead I used "margins" to position the boxes.*/
+
+
+.location-boxes {
+   width: 300px; 
+    background-color: black;
+    text-align: center;
+   line-height: 2;
+   opacity: 1;
+}
+
+.locations p {
+    font-weight:lighter;
+}
+
+.footer {
+    text-align:center;
+    height: 200px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+#copyright {
+    margin-left: 20px;
+    margin-top:0px; 
+}
+
