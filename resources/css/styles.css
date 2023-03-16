@@ -108,7 +108,7 @@ h4 {
 
 .locations-container {
     height: 500px;
-    background-image: url("/Users/elinlewold/Codecademy/projects/Tea Cozy/Resources/img-locations-background.jpeg");
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*12idre9*_ga*MzY4MjY3NzY0Mi4xNjczNjA2MDc4*_ga_3LRZM6TM9L*MTY3ODQ0NDczOS4xOC4xLjE2Nzg0NDQ3NDMuMC4wLjA");
     background-repeat: no-repeat;
     background-position-x: center;
     background-size:1200px 500px;
